@@ -1,20 +1,16 @@
 <!doctype html>
 <html lang="zh-Hant-TW">
 <head>
-<!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- D3, jquery -->
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
 
-<!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
 <title>作業一</title>
-<!-- https://alexlenail.me/NN-SVG/about.html -->
 <link rel="icon" href="../hw00/favicon.svg"/>
 <style type="text/css">
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
@@ -86,7 +82,11 @@
     color: rgb(106, 76, 156);
     font-family: 'CircleFont', 'Noto Sans JP', serif;
   }
-
+  
+  p {
+    font-family:'LXGW WenKai Mono TC';
+  }
+  
   .container-fluid {
     width:  90%;
   }
@@ -132,7 +132,6 @@
 
 <div class="container-fluid">
 
-  <!-- ---------------------------------------------- -->
   <div class="row hw12 toprow">
     <div class="col twenty"><a href="../hw00/index.html">00</a></div>
     <div class="col twenty"><a href="../hw01/index.html">01</a></div>
@@ -141,27 +140,31 @@
     <div class="col twenty"><a href="../hw04/index.html">04</a></div>
     <div class="col twenty"><a href="../hw05/index.html">05</a></div>
     <div class="col twenty"><a href="../hw06/index.html">06</a></div>
-    <div class="col twenty"><a href="../hw06/index.html">07</a></div>
-    <div class="col twenty"><a href="../hw06/index.html">08</a></div>
-    <div class="col twenty"><a href="../hw06/index.html">09</a></div>
-    <div class="col twenty"><a href="../hw06/index.html">10</a></div>
   </div>
 
-  <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
       <h1>作業 01</h1>
     </div>
   </div>
 
-  <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這是一篇心得，需要105字，我寫了很多的稿紙，總共8份，內容概括：千字文、長恨歌、洛神賦、詩經、注音、部首、英數、標點、姓氏名字號，自從國小畢業後，或者是說沒有了甲乙本的荼毒後，已經很久沒有寫那麼多字了。這次作業，使我理解古人寫字修身養性的快樂，煩惱都跟著下筆的一撇一捺，煙消雲散，整個豁然開朗。
     </div>
   </div>
-
-  <!-- ------------------------------------------------>
+  
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <span>倉庫位置連結： </span>
+      <br>
+      <button type="button" onclick="location.href='https://github.com/lctung/ai2026s/tree/main/hw01'">
+        前往 hw01 倉庫
+      </button>
+      <div>(p.s 請記得修改網址)</div>
+    </div>
+  </div>
+  
   <div class="row hw12">
     <div class="col-md-12 twenty">
       <table>
@@ -173,83 +176,236 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
-
       </table>
     </div>
   </div>
 
-  <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-3 twenty">
+      <figcaption>千字文 第1頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_千字文_page1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>千字文 第2頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_千字文_page2.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>千字文 第3頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_千字文_page3.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>千字文 第4頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_千字文_page4.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>千字文 第5頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_千字文_page5.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>千字文 第6頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_千字文_page6.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>千字文 第7頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_千字文_page7.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>千字文 第8頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_千字文_page8.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>千字文 第9頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_千字文_page9.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>千字文 第10頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_千字文_page10.png" width="100%">
+    </div>
+
+    <div class="col-md-3 twenty">
+      <figcaption>姓氏名字號 第1頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_姓氏名字號_page1.png" width="100%">
+    </div>
+
+    <div class="col-md-3 twenty">
+      <figcaption>標點符號 第1頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_標點符號_page1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>標點符號 第2頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_標點符號_page2.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>標點符號 第3頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_標點符號_page3.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>標點符號 第4頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_標點符號_page4.png" width="100%">
+    </div>
+
+    <div class="col-md-3 twenty">
+      <figcaption>洛神賦 第1頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_洛神賦_page1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>洛神賦 第2頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_洛神賦_page2.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>洛神賦 第3頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_洛神賦_page3.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>洛神賦 第4頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_洛神賦_page4.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>洛神賦 第5頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_洛神賦_page5.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>洛神賦 第6頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_洛神賦_page6.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>洛神賦 第7頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_洛神賦_page7.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>洛神賦 第8頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_洛神賦_page8.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>洛神賦 第9頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_洛神賦_page9.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>洛神賦 第10頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_洛神賦_page10.png" width="100%">
+    </div>
+
+    <div class="col-md-3 twenty">
+      <figcaption>英文、數字 第1頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_英文、數字_page1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>英文、數字 第2頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_英文、數字_page2.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>英文、數字 第3頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_英文、數字_page3.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>英文、數字 第4頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_英文、數字_page4.png" width="100%">
+    </div>
+
+    <div class="col-md-3 twenty">
+      <figcaption>詩經 國風 鄭風 子衿 第1頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_詩經 國風 鄭風 子衿_page1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>詩經 國風 鄭風 子衿 第2頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_詩經 國風 鄭風 子衿_page2.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>詩經 國風 鄭風 子衿 第3頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_詩經 國風 鄭風 子衿_page3.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>詩經 國風 鄭風 子衿 第4頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_詩經 國風 鄭風 子衿_page4.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>詩經 國風 鄭風 子衿 第5頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_詩經 國風 鄭風 子衿_page5.png" width="100%">
+    </div>
+
+    <div class="col-md-3 twenty">
+      <figcaption>部首、注音、日文 第1頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_部首、注音、日文_page1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>部首、注音、日文 第2頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_部首、注音、日文_page2.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>部首、注音、日文 第3頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_部首、注音、日文_page3.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>部首、注音、日文 第4頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_部首、注音、日文_page4.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>部首、注音、日文 第5頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_部首、注音、日文_page5.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>部首、注音、日文 第6頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_部首、注音、日文_page6.png" width="100%">
+    </div>
+
+    <div class="col-md-3 twenty">
+      <figcaption>長恨歌 第1頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_長恨歌_page1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>長恨歌 第2頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_長恨歌_page2.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>長恨歌 第3頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_長恨歌_page3.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>長恨歌 第4頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_長恨歌_page4.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>長恨歌 第5頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_長恨歌_page5.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>長恨歌 第6頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_長恨歌_page6.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>長恨歌 第7頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_長恨歌_page7.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>長恨歌 第8頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_長恨歌_page8.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>長恨歌 第9頁</figcaption>
+      <img class="withborder" src="imgs/113590002_陳書璿_長恨歌_page9.png" width="100%">
     </div>
   </div>
 
-  <!-- ------------------------------------------------>
-
-  <div class="pdf-section">
-  <h2>千字文</h2>
-  <iframe src="113590002_陳書璿_千字文.pdf" width="100%" height="600px"></iframe>
 </div>
-
-<div class="pdf-section">
-  <h2>英文、數字</h2>
-  <iframe src="113590002_陳書璿_英文、數字.pdf" width="100%" height="600px"></iframe>
-</div>
-
-<div class="pdf-section">
-  <h2>洛神賦</h2>
-  <iframe src="113590002_陳書璿_洛神賦.pdf" width="100%" height="600px"></iframe>
-</div>
-
-<div class="pdf-section">
-  <h2>長恨歌</h2>
-  <iframe src="113590002_陳書璿_長恨歌.pdf" width="100%" height="600px"></iframe>
-</div>
-
-<div class="pdf-section">
-  <h2>標點符號</h2>
-  <iframe src="113590002_陳書璿_標點符號.pdf" width="100%" height="600px"></iframe>
-</div>
-
-<div class="pdf-section">
-  <h2>部首、注音、日文</h2>
-  <iframe src="113590002_陳書璿_部首、注音、日文.pdf" width="100%" height="600px"></iframe>
-</div>
-
-<div class="pdf-section">
-  <h2>詩經 國風 鄭風 子衿</h2>
-  <iframe src="113590002_陳書璿_詩經 國風 鄭風 子衿.pdf" width="100%" height="600px"></iframe>
-</div>
-
-<div class="pdf-section">
-  <h2>姓氏名字號</h2>
-  <iframe src="113590002_陳書璿_姓氏名字號.pdf" width="100%" height="600px"></iframe>
-</div>
-
-  <!-- ------------------------------------------------>
-
 
 <script>
   $(function() {
@@ -263,14 +419,10 @@
   d3.select("#myCheckbox2").on("change",update);
   d3.select("#myCheckbox3").on("change",update);
   d3.select("#myCheckbox4").on("change",update);
-  // d3.select("#myCheckbox5").on("change",update);
-  // d3.select("#myCheckbox6").on("change",update);
-  // d3.select("#myCheckbox7").on("change",update);
 
   update();
   
   function update(){
-
     var score = 0;
 
     if (d3.select("#myCheckbox1").property("checked")){
@@ -288,7 +440,6 @@
     if (d3.select("#myCheckbox4").property("checked")){
       score += parseInt(d3.select('#m4').html());   
     }
-
 
     d3.select("#myTotal").html(score);    
   }
